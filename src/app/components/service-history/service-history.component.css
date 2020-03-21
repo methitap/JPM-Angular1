@@ -1,0 +1,16 @@
+  .bg-white {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter:brightness(45%); */
+    margin-left: 80px;
+    height: auto;
+    width: auto;
+  }
+   .table td {
+            text-align: center;   
+  }
+
+th {
+  text-align: center !important;
+}

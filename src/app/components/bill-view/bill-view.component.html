@@ -1,0 +1,71 @@
+<div class="content-wrapper" style="margin-left: 20px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+           Bill
+            <small>List</small>
+
+        </h1>
+        <h3>{{billAnnounce.house}}</h3>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- The time line -->
+                <ul class="timeline">
+                    <!-- timeline time label -->
+                    <!-- <li class="time-label">
+                  <span class="bg-red">
+                    10 Feb. 2014
+                  </span>
+            </li> -->
+                    <!-- END timeline item -->
+                    <!-- timeline item -->
+                    <li>
+                        <i class="fa  fa-gear ( bg-blue"></i>
+
+                        <div class="timeline-item" *ngFor="let billAnnounce of results">
+                            <!-- *ngFor="let news of results"> -->
+                            <!-- <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span> -->
+                            <h3 class="timeline-header"><a href="#">{{billAnnounce.house}}</a> </h3>
+
+                            <div class="timeline-body">
+                                <a>บ้านเลขที่</a> <br>{{billAnnounce.house}}
+                                <br>
+                                <a>สถานะ</a> <br> <span style="color: rgb(43, 160, 58);">ชำระแล้ว</span>
+                                <br>
+                                <a>หลักฐาน</a> <br>(image)
+                                <br>
+    
+                                <br>
+                            <button type="submit" (click)="onDonebill()" class="btn btn-primary">Done</button>
+                            
+                            </div>
+                            <!-- <div class="timeline-footer">
+                    <button type="submit" (click)="onViewService()" class="btn btn-primary">View</button>
+                </div> -->
+                        </div>
+
+
+
+                    </li>
+                    <!-- END timeline item -->
+                    <!-- timeline time label -->
+
+
+                </ul>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+
+        <!-- /.row -->
+
+    </section>
+    <!-- /.content -->
+</div>

@@ -1,0 +1,14 @@
+.bg-white {
+    background-color: #ffffff;
+    /* filter:brightness(45%); */
+    margin-left: 80px;
+    height: auto;
+    width: auto;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    padding: 50px;
+    margin: auto;
+  }

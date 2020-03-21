@@ -1,0 +1,16 @@
+div.image{
+    background-image: url(/assets/dist/img/welcometo.png)  ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    opacity: 0.95;
+    z-index:-3;
+    width: 1300px;
+    height: 635px;
+    margin-right: auto;
+}
+.box-footer{
+    background-color:transparent;
+}

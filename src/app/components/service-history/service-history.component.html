@@ -1,0 +1,114 @@
+<div class="content-wrapper" style="margin-left: 20px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Service
+            <small>List</small>
+        </h1>
+    </section>
+    <div class="col-xs-3">
+        <form action="#" method="get" class="sidebar-form" id="service" style="padding: auto;">
+            <div class="input-group">
+                <input type="text" id="service-search" class="form-control" placeholder="Search..."
+                    style="background-color:white;">
+                <span class="input-group-btn">
+                    <button type="submit" id="searchService-btn" id="search-btn" class="btn btn-flat"
+                        style="background-color:white;">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- The time line -->
+                <ul class="timeline">
+                    <!-- timeline time label -->
+                    <!-- <li class="time-label">
+                  <span class="bg-red">
+                    10 Feb. 2014
+                  </span>
+            </li> -->
+                    <!-- END timeline item -->
+                    <!-- timeline item -->
+                    <li >
+                        <i class="fa  fa-gear ( bg-blue"></i>
+                      <!-- timeline time label -->
+                      <!-- <li class="time-label">
+                            <span class="bg-red">
+                              10 Feb. 2014
+                            </span>
+                      </li> -->
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      
+                      
+                        <!-- <div  class="timeline-item" *ngFor="let serviceList of results"> -->
+                        <!-- *ngFor="let news of results"> -->
+                          <!-- <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span> -->
+                          <div class="bg-white text-center">
+                          <table class="table">
+                          <thead >
+                            <tr >
+                                <th scope="col">Date</th>
+                                <th scope="col">User</th>
+                                <th scope="col">Topic</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Manage</th>
+                                
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr  *ngFor="let serviceList of results; let i = index;">
+                            <span class="time">
+                                
+                                <td scope="row">
+                                <!-- <i class="fa fa-clock-o"></i>  -->
+                                {{serviceList.serDate | date:'dd/MM/yyyy H:mm'}}</td></span>
+                              <!-- <th scope="row">1</th> -->
+                              <td>{{serviceList.by}}</td>
+
+
+                              <td>{{serviceList.serTopic}}</td>
+                                <td>
+                                    <span class="{{serviceList.classStatus}}">{{serviceList.status}}</span>
+                                </td>
+                          <!-- <h3 class="timeline-header"><a href="#">{{serviceList.by}}</a> {{serviceList.serTopic}}</h3>
+                          <div class="timeline-footer">
+                              <button type="submit" (click)="onViewService()" class="btn-xs btn-primary">View</button>
+                          </div> -->
+                          <td>
+                            <button type="button" class="btn-sm btn-primary mr-2 mb-2 p-2" (click)="viewService(serviceList)">View</button>
+                            &nbsp;
+            
+                            <!-- <button type="button" class="btn-sm btn-info mr-2 mb-2 p-2" (click)="delete(itemsRequstInit)">Edit</button> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          
+          </div>
+          </li>
+                    <!-- END timeline item -->
+                    <!-- timeline time label -->
+
+
+                </ul>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+
+        <!-- /.row -->
+
+    </section>
+    <!-- /.content -->
+</div>

@@ -1,0 +1,54 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+
+    <!-- Main content -->
+    <div class="image"> 
+    <section class="content">
+      
+        
+        <div class="login-box">
+            <div class="login-logo">
+              <a><b>JPM</b>Website</a>
+            </div>
+            <!-- /.login-logo -->
+            <div class="login-box-body">
+              <p class="login-box-msg">Sign in</p>
+          
+              <form >
+                <div class="form-group has-feedback">
+                  <input name="username" [(ngModel)]="mUsername" type="email" class="form-control" placeholder="E-mail">
+                  <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <input name="password" [(ngModel)]="mPassword" type="password" class="form-control" placeholder="Password">
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                  <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                      <label style="margin-left: 20px;">
+                        <input type="checkbox"> Remember Me
+                      </label>
+                    </div>
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-xs-4">
+                    <button type="submit" (click)="onClickSubmit()" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                  </div>
+                  <!-- /.col -->
+                </div>
+              </form>
+              
+          
+              <!-- /.social-auth-links -->
+          
+              <a href="#">I forgot my password</a><br>
+              <a href="/register" class="text-center">Register a new membership</a>
+          
+            </div>
+            <!-- /.login-box-body -->
+          </div>
+          
+    </section>
+</div>
+</div>

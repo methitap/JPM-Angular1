@@ -1,0 +1,102 @@
+<div class="content-wrapper" style="margin-left: 20px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Service
+            <small>History</small>
+        </h1>
+    </section>
+    <div class="col-xs-3">
+        <form action="#" method="get" class="sidebar-form" id="service" style="padding: auto;">
+            <div class="input-group">
+                <input type="text" id="service-search" class="form-control" placeholder="Search..."
+                    style="background-color:white;">
+                <span class="input-group-btn">
+                    <button type="submit" id="searchService-btn" id="search-btn" class="btn btn-flat"
+                        style="background-color:white;">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- The time line -->
+                <ul class="timeline">
+                    <!-- timeline time label -->
+                    <!-- <li class="time-label">
+                  <span class="bg-red">
+                    10 Feb. 2014
+                  </span>
+            </li> -->
+                    <!-- END timeline item -->
+                    <!-- timeline item -->
+                    <li >
+                        <i class="fa  fa-list-alt ( bg-blue"></i>
+                      <!-- timeline time label -->
+                      <!-- <li class="time-label">
+                            <span class="bg-red">
+                              10 Feb. 2014
+                            </span>
+                      </li> -->
+                      <!-- END timeline item -->
+                      <!-- timeline item -->
+                      
+                      
+                        <!-- <div  class="timeline-item" *ngFor="let serviceList of results"> -->
+                        <!-- *ngFor="let news of results"> -->
+                          <!-- <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span> -->
+                          <div class="bg-white text-center">
+                          <table class="table">
+                          <thead >
+                            <tr >
+                                <!-- <th scope="col">No.</th> -->
+                                <th scope="col">บ้านเลขที่</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Manage</th>
+                                
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let billAnnounce of results">
+                              <!-- <th scope="row">1</th> -->
+                              <!-- <td>(No.)</td> -->
+                              <td>{{billAnnounce.house}}</td>
+                              <td><span class="label label-success">ชำระแล้ว</span></td>
+                          <!-- <h3 class="timeline-header"><a href="#">{{serviceList.by}}</a> {{serviceList.serTopic}}</h3>
+                          <div class="timeline-footer">
+                              <button type="submit" (click)="onViewService()" class="btn-xs btn-primary">View</button>
+                          </div> -->
+                          <td>
+                            <button type="button" class="btn-sm btn-primary mr-2 mb-2 p-2" (click)="onViewBill()">View</button>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          
+          </div>
+          </li>
+                    <!-- END timeline item -->
+                    <!-- timeline time label -->
+
+
+                </ul>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+
+        <!-- /.row -->
+
+    </section>
+    <!-- /.content -->
+</div>

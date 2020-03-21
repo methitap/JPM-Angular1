@@ -1,0 +1,84 @@
+<div class="content-wrapper" style="margin-left: 20px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Service
+            <small>List</small>
+
+        </h1>
+        <h3>{{serviceList.by}}</h3>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- The time line -->
+                <ul class="timeline">
+                    <!-- timeline time label -->
+                    <!-- <li class="time-label">
+                  <span class="bg-red">
+                    10 Feb. 2014
+                  </span>
+            </li> -->
+                    <!-- END timeline item -->
+                    <!-- timeline item -->
+                    <li>
+                        <i class="fa  fa-gear ( bg-blue"></i>
+
+                        <div class="timeline-item" *ngFor="let serviceList of results">
+                            <!-- *ngFor="let news of results"> -->
+                            <!-- <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span> -->
+                            <h3 class="timeline-header"><a href="#">{{serviceList.serTopic}}</a> </h3>
+
+                            <div class="timeline-body">
+                                <a>อุปกรณ์</a> <br>{{serviceList.tool}}
+                                <br>
+                                <a>รายละเอียด</a> <br>{{serviceList.serDetail}}
+                                <br>
+                                <a>รูปภาพ</a> <br>
+                                <img [src]=serviceList.serimage>
+
+                                <br>
+                                <a>Location</a> <br>{{serviceList.location}}
+                                <br>
+                                <a>สถานะ</a><br>
+
+                                <select class="col-xs-2" (change)="onChange($event.target.value)">
+                        
+                                        <option>รอดำเนินการ</option>
+                                        <option>กำลังดำเนินการ</option>
+                                        <option>ดำเนินการเรียบร้อย</option>
+                                    
+                                </select>
+                                <br>
+                                <br>
+                            <button type="submit" (click)="onDoneService()" class="btn btn-primary">Done</button>
+                            
+                            </div>
+                            <!-- <div class="timeline-footer">
+                    <button type="submit" (click)="onViewService()" class="btn btn-primary">View</button>
+                </div> -->
+                        </div>
+
+
+
+                    </li>
+                    <!-- END timeline item -->
+                    <!-- timeline time label -->
+
+
+                </ul>
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+
+        <!-- /.row -->
+
+    </section>
+    <!-- /.content -->
+</div>

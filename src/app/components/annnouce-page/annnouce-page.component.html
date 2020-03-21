@@ -1,0 +1,63 @@
+<div class="content-wrapper" style="margin-right: 200px;">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      History
+      <small>of Announcement</small>
+    </h1>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+    <!-- row -->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- The time line -->
+        <ul class="timeline">
+          <!-- timeline time label -->
+          <!-- <li class="time-label">
+                  <span class="bg-red">
+                    10 Feb. 2014
+                  </span>
+            </li> -->
+          <!-- END timeline item -->
+          <!-- timeline item -->
+          <li>
+            <i class="fa fa-comments bg-blue"></i>
+            <div class="timeline-item" *ngFor="let news of results">
+              <span class="time"><td scope="row"><i class="fa fa-clock-o"></i> 
+                  {{news.date | date:'dd/MM/yyyy H:mm'}}</td></span>
+
+              <h3 class="timeline-header"><a href="#">{{news.topic}}</a> </h3>
+                <img [src]=news.img>
+
+              <div class="timeline-body">
+                {{news.detail}}
+              </div>
+              <div class="timeline-footer">
+                <a class="btn btn-primary btn-flat btn-xs" (click)="editAnnounce(news)">Edit</a>
+                &nbsp;
+                <a class="btn btn-danger btn-flat btn-xs" (click)="deleteAnnounce(news)">Delete</a>
+              </div>
+            </div>
+          
+
+
+          </li>
+          <!-- END timeline item -->
+          <!-- timeline time label -->
+
+
+        </ul>
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+
+
+    <!-- /.row -->
+
+  </section>
+  <!-- /.content -->
+</div>
